@@ -1,14 +1,45 @@
-.list-recipes {
+/* sections */
+
+/* NOTE: We have to manually set margin to 0 to cover the whole background of the page */
+/* If we don't do this it will have gaps in the page */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top-section {
+  background-color: #0066cc;
+  height: 400px;
+  display: column;
+  flex-direction: row;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* lists  */
+
+.middle-section-header {
+  margin-bottom: 40px;
+  border: solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.middle-section {
   margin: 0 auto;
-  /* border: 4px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-.list-recipes a {
-  /* background: peachpuff; */
+.image-gallery {
   border-style: solid;
   border-width: 4px;
   border-radius: 30px;
@@ -19,34 +50,110 @@
   width: 160px;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
+
+.image-link {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* headers  */
 
 h1 {
   font-weight: bold;
   color: #fff;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 h2 {
   font-weight: bold;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .headers {
-  background: #2c73d2;
+  height: 25%;
+  width: 100%;
   margin: 0 auto;
-  border: 4px solid red;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-end;
 }
 
-.headers .header-items {
-  border: 4px solid blue;
+.header-items {
+  flex-basis: 15%;
+  margin: 8px;
 }
 
-.headers .header-logo {
-  border: 4px solid blue;
+.header-logo {
+  flex-basis: 55%;
+  margin: 15px;
+}
+
+.opening-header {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 70%;
+}
+
+.opening-header .opening-image {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  margin-right: 25%;
+  object-fit: cover;
+  align-self: center;
+}
+
+.opening-text {
+  margin-left: 25%;
+  height: 95%;
+  flex-direction: row;
+  align-content: center;
+}
+
+.opening-text h1 {
+  flex-flow: column wrap;
+  width: 98%;
+}
+
+.opening-text p {
+  margin: 0;
+  font-size: 14px;
+  flex-flow: row wrap;
+  width: 400px;
+}
+
+/* inspirational  */
+
+.inspirational-quote {
+  background-color: darkgrey;
+  margin-top: 15%;
+  height: 33.33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 24px;
+  border-top: 1px solid #ddd;
+}
+
+.inspirational-quote p {
+  width: 75%;
+  font-size: 20px;
+  border: 4px solid green;
 }
