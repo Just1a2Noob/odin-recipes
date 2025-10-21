@@ -8,27 +8,28 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  font-family: Roboto;
 }
 
 .top-section {
-  background-color: #4e8397;
-  height: 400px;
+  background-color: #1f2937;
+  height: 700px;
   display: column;
   flex-direction: row;
-  color: white;
-  font-size: 24px;
-  margin-bottom: 40px;
+  color: #f9faf8;
+  margin-bottom: 80px;
 }
 
 /* lists  */
 
 .middle-section-header {
-  margin-bottom: 40px;
-  border: solid red;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 20px;
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
 }
 
 .middle-section {
@@ -46,8 +47,8 @@ body {
   border-color: #0081cf;
   display: flex;
   margin: 10px;
-  height: 160px;
-  width: 160px;
+  height: 200px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -67,19 +68,20 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+.image-gallery-text {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-gallery-text p {
+  width: 15%;
+  text-align: center;
+}
+
 /* headers  */
-
-h1 {
-  font-weight: bold;
-  color: #fff;
-  font-size: 26px;
-}
-
-h2 {
-  font-weight: bold;
-  color: #fff;
-  font-size: 16px;
-}
 
 .headers {
   height: 25%;
@@ -92,8 +94,10 @@ h2 {
 }
 
 .header-items {
-  flex-basis: 15%;
-  margin: 8px;
+  flex-basis: 20%;
+  margin-left: 15px;
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
 .header-logo {
@@ -107,42 +111,46 @@ h2 {
   flex-direction: row wrap;
   justify-content: flex-end;
   align-items: flex-start;
-  height: 70%;
+  height: 60%;
 }
 
 .opening-header .opening-image {
   flex: 0 0 auto;
-  width: 300px;
-  height: 200px;
-  margin-right: 25%;
-  object-fit: cover;
+  width: 500px;
+  height: 400px;
+  margin-right: 5.6%;
+  margin-left: 2%;
+  object-fit: contain;
   align-self: center;
 }
 
 .opening-text {
-  margin-left: 25%;
+  margin-left: 2%;
   height: 95%;
+  width: 70%;
   flex-direction: row;
   align-content: center;
 }
 
 .opening-text h1 {
   flex-flow: column wrap;
-  width: 98%;
+  width: 100%;
+  font-weight: 900;
+  font-size: 48px;
 }
 
 .opening-text p {
   margin: 0;
-  font-size: 14px;
+  font-size: 24px;
   flex-flow: row wrap;
-  width: 400px;
+  width: 70%;
 }
 
 /* inspirational  */
 
 .inspirational-quote {
   background-color: darkgrey;
-  margin-top: 15%;
+  margin-top: 5%;
   height: 33.33vh;
   display: flex;
   flex-direction: column;
